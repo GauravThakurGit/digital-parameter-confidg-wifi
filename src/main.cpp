@@ -11,7 +11,7 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 void setup() {
-// write your initialization code here
+    // write your initialization code here
     Serial.begin(9600);
     if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDRESS)) {
         Serial.println(F("SSD1306 allocation failed"));
@@ -21,11 +21,15 @@ void setup() {
     display.setTextSize(1);
     display.setTextColor(SSD1306_WHITE);
     display.setCursor(0, 0);
-    display.println("Hello, World!");
+    display.println("=====================");
+    display.println("Gaurav Thakur");
+    display.println("Sorab Bhabautiya");
+    display.println("Samarth Gupta");
+    display.println("=====================");
+    display.println("Nitin Meena");
     display.display();
-
 }
 
 void loop() {
-// write your code here
+    // write your code here
 }
